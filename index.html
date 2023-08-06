@@ -1,12 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>VD Engineering</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Source+Sans+Pro:wght@300&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 </head>
 <body>
-<h1>VD Engineering</h1>
-<p>haha</p>
-<p>Amazing company</p>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img class="d-inline-block align-text-top navLogo" src="images/finalLogo.png" alt="Logo" width="30"
+                 height="24">
+        </a>
+        <button type="button" class="navbar-toggler togglerButton" data-toggle="collapse" data-target="#navbar-menu"
+                aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container-flex">
+                <img class="toggleSvg" src="./images/toggleSvg.svg" alt="">
+            </div>
+        </button>
+        <div id="navbar-menu" class="collapse navbar-collapse justify-content-end">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Почетна</a>
+                <a class="nav-link" href="#">Понуди</a>
+                <a class="nav-link" href="#">Изведби</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="slideshow-container">
+    <div class="mySlides">
+        <div class="slide1">
+            <button class="rightButton" onclick="plusDivs(-1)">
+                <img src="images/arrow_forward.svg" alt=""/>
+            </button>
+            <button class="leftButton" onclick="plusDivs(+1)">
+                <img src="images/arrow_back.svg" alt=""/>
+            </button>
+            <div class="divInSlides">
+                <h1 class="titleInSlides">Placeholder</h1>
+                <h4 class="subTitleInSlides">Lorem ipsum height amazing stuff!</h4>
+                <button class="goButtonInSlides" type="button">Go Button</button>
+            </div>
+        </div>
+    </div>
+    <div class="mySlides">
+        <div class="slide2">
+            <button class="rightButton" onclick="plusDivs(-1)">
+                <img src="images/arrow_forward.svg" alt=""/>
+            </button>
+            <button class="leftButton" onclick="plusDivs(+1)">
+                <img src="images/arrow_back.svg" alt=""/>
+            </button>
+            <div class="divInSlides">
+                <h1 class="titleInSlides">Моделирање</h1>
+                <h4 class="subTitleInSlides">Моделирајте и искусете го вашиот дом преку врвни модели!</h4>
+                <button class="goButtonInSlides" type="button">Моделирање</button>
+            </div>
+        </div>
+    </div>
+    <div class="mySlides">
+        <div class="slide3">
+            <button class="rightButton" onclick="plusDivs(-1)">
+                <img src="images/arrow_forward.svg" alt=""/>
+            </button>
+            <button class="leftButton" onclick="plusDivs(+1)">
+                <img src="images/arrow_back.svg" alt=""/>
+            </button>
+            <div class="divInSlides">
+                <h1 class="titleInSlides">Наши проекти</h1>
+                <h4 class="subTitleInSlides">Развивајте го вашиот проект со нас!</h4>
+                <button class="goButtonInSlides" type="button">Проекти</button>
+            </div>
+        </div>
+    </div>
+    <div class="row clickImageContainer">
+        <div class="col">
+            <img class="clickImage" src="images/image2.jpg"
+                 style="width:90%" onclick="currentDiv(0)" alt="">
+        </div>
+        <div class="col">
+            <img class="clickImage" src="images/image3.jpg"
+                 style="width:90%;" onclick="currentDiv(2)" alt="">
+        </div>
+        <div class="col">
+            <img class="clickImage" src="images/kitchen.jpg"
+                 style="width:90%" onclick="currentDiv(1)" alt="">
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+
+
+<section class="bright afterFirstSection">
+    <h1>Reach new heights with DronSafe</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="sectionImg" src="images/image1" alt="No image available">
+            </div>
+            <div class="col">
+                <p>
+                    Explore the wilderness and have your drone look over you.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--    <div class="wave">-->
+    <!--        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">-->
+    <!--            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"-->
+    <!--                  class="shape-fill"></path>-->
+    <!--        </svg>-->
+    <!--    </div>-->
+</section>
+
+<section class="dark2 afterFirstSection">
+    <h1>Create awesome memories</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>
+                    Our drones don't just keep you safe,
+                    they take amazing pictures of you and your friends.
+                </p></div>
+            <div class="col">
+                <img class="sectionImg" src="images/image2.jpg" alt="No image available">
+            </div>
+        </div>
+    </div>
+    <div class="wave2">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                  opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                  opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                  class="shape-fill"></path>
+        </svg>
+    </div>
+</section>
+
+<section class="bright2 afterFirstSection">
+    <h1 class="join-us-now">Map every step of the way</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="sectionImg" src="images/image3.jpg" alt="No image available">
+            </div>
+            <div class="col">
+                <p class="join-us-now">
+                    Find the best and the safest route to the top.
+                    <br>
+                    <a class="join-us-now join-us-now-a" href="#">Join us now.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="wave3">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                  opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                  opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                  class="shape-fill"></path>
+        </svg>
+    </div>
+</section>
+
+<footer class="text-center">
+    <a href="#">Facebook </a>
+    <a href="#">Twitter </a>
+    <a href="#">Instagram </a>
+    <div class="text-center text-white">
+        © 2023 Copyright:
+        <p>DronSafe</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
