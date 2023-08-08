@@ -1,4 +1,4 @@
-var slideIndex = 0;
+var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -8,8 +8,12 @@ function plusDivs(n) {
 function showDivs(n) {
     let i;
     let x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
+    if (n > x.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = x.length
+    }
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
@@ -17,7 +21,7 @@ function showDivs(n) {
 }
 
 function currentDiv(number) {
-    slideIndex = number;
+    slideIndex = number+1;
     let x = document.getElementsByClassName("mySlides");
     for (let i = 0; i < x.length; i++) {
         x[i].style.display = "none";

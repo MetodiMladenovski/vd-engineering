@@ -248,7 +248,7 @@ footer {
     background-size: cover;
     background-image:
             linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-            url('images/image2.jpg');}
+            url('images/people.jpg');}
 .slide2 {
     width: 100%;
     height: 50vw;
@@ -262,8 +262,8 @@ footer {
     height: 50vw;
     background-size: cover;
     background-image:
-            linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-            url('images/image3.jpg');}
+            linear-gradient(to right, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)),
+            url('images/house.jpg');}
 
 .leftButton {
     position: absolute;
@@ -347,7 +347,7 @@ footer {
         width: 10em;
         border: 1px solid black;
         height: 2em;
-        font-size: 2vh;
+        font-size: 3vh;
         background: #ffd25a;
     }
     .clickImageContainer {
@@ -371,7 +371,7 @@ footer {
         font-size: 6vw;
     }
     .subTitleInSlides {
-        margin-top: 10em;
+        margin-top: 9em;
         font-size: 4vw;
     }
     .goButtonInSlides {
