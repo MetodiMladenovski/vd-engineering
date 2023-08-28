@@ -9,13 +9,13 @@ p {
 }
 
 body {
-    background: linear-gradient(black, black);
+    background: black;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -24,7 +24,7 @@ body::-webkit-scrollbar{
     height: 7vh;
 }
 
-.navLogo:hover{
+.navLogo:hover {
     padding: 5px;
     box-shadow: 0 0 5px 2px #ffd25a;
 }
@@ -48,13 +48,13 @@ body::-webkit-scrollbar{
     border: 1px solid;
 }
 
-
 footer {
+    color: #141301;
     background-color: #ffd25a;
 }
 
 footer a {
-    color: wheat;
+    color: #141301;
 }
 
 .toggleSvg {
@@ -85,40 +85,7 @@ nav {
     box-shadow: 0 0 4px 2px #ffd25a;
 }
 
-.joinus {
-    border-radius: 40%;
-    width: 100px;
-    height: 35px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #ffd25a;
-    color:wheat;
-    font-weight: 400;
-    font-size: 16px;
-    border: 0;
-    margin-left: 10px;
-    align-self: center;
-    line-height: 35px;
-    display: block;
-    text-align: center;
-}
-
-.joinus:hover {
-    color: #ffd25a;
-    background-color: wheat;
-    transition: 400ms;
-    border: 1px solid;
-}
-
-.join-us-now {
-    color: #ffd25a;
-}
-
-.join-us-now-a {
-    font-weight: 700;
-}
-
-
-.sectionImg{
+.sectionImg {
     width: 70vmin;
     height: 40vmin;
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
@@ -145,24 +112,12 @@ section {
 }
 
 .afterFirstSection {
-    padding-top: 100px;
+    padding-top: 80px;
     min-height: 30vw;
 }
 
-.dark {
-    background: linear-gradient(#ffd25a, #141301);
-}
-
-.firstSection{
-    background-color: wheat;
-}
-
-.dark2 {
-    background-color: #5c4d3c;
-}
-
-.bright2 {
-    background-color: #a7cdbd;
+.firstSection {
+    background-color: #48A9A6;
 }
 
 .wave {
@@ -203,7 +158,7 @@ section {
 }
 
 .wave2 .shape-fill {
-    fill: wheat;
+    fill: #48A9A6;
 }
 
 .wave3 {
@@ -223,7 +178,7 @@ section {
 }
 
 .wave3 .shape-fill {
-    fill: #5c4d3c;
+    fill: #141301;
 }
 
 footer {
@@ -231,9 +186,10 @@ footer {
     border-color: wheat;
 }
 
-* {box-sizing:border-box}
+* {
+    box-sizing: border-box
+}
 
-/* Slideshow container */
 .slideshow-container {
     width: 100%;
     position: relative;
@@ -251,24 +207,25 @@ footer {
     width: 100%;
     height: 50vw;
     background-size: cover;
-    background-image:
-            linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-            url('images/people.jpg');}
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url('images/people.jpg');
+}
+
 .slide2 {
     width: 100%;
     height: 50vw;
     background-size: cover;
-    background-image:
-            linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-            url('images/kitchen.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url('images/kitchen.jpg');
 }
+
 .slide3 {
     width: 100%;
     height: 50vw;
     background-size: cover;
-    background-image:
-            linear-gradient(to right, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)),
-            url('images/house.jpg');}
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)),
+    url('images/house.jpg');
+}
 
 .leftButton {
     position: absolute;
@@ -337,72 +294,6 @@ footer {
     border: 1px solid white;
 }
 
-
-
-@media screen and (min-width: 701px) {
-    .titleInSlides {
-        font-size: 4vw;
-        margin-bottom: 5vh;
-    }
-    .subTitleInSlides {
-        font-size: 2vw;
-    }
-    .goButtonInSlides {
-        margin-top: 5vh;
-        width: 10em;
-        border: 1px solid black;
-        height: 2em;
-        font-size: 3vh;
-        background: #ffd25a;
-    }
-    .clickImageContainer {
-        width: 70%;
-        height: 9vw;
-        margin-top: -10vw;
-        position: absolute;
-        opacity: 0.7;
-        margin-left: 15%;
-    }
-    .clickImage {
-        cursor: pointer;
-        height: 9vw;
-        border: 1px solid #ffd25a;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .titleInSlides {
-        margin-top: 1em;
-        font-size: 6vw;
-    }
-    .subTitleInSlides {
-        margin-top: 9em;
-        font-size: 4vw;
-    }
-    .goButtonInSlides {
-        background: #ffd25a;
-        border: 1px solid black;
-        width: 10em;
-        font-size: 4vw;
-        height: 2em;
-    }
-    .slideshow-container {
-        height: 110vw;
-    }
-    .clickImageContainer {
-        width: 100%;
-        position: absolute;
-        margin: 40% auto;
-        opacity: 0.7;
-    }
-    .clickImage {
-        height:15vw;
-        cursor: pointer;
-        width: 100%;
-        border: 1px solid #ffd25a;
-    }
-}
-
 .firstSection .col {
     width: 15rem;
     height: 14rem;
@@ -419,7 +310,7 @@ footer {
     background: #141301;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0 0 5px 2px #141301;
 }
 
@@ -439,3 +330,213 @@ footer {
 .firstSection .col a {
     text-decoration: none;
 }
+
+.secondSection {
+    background: #141301;
+}
+
+.secondSection h1 {
+    color: #ffd25a;
+}
+
+.secondSection p {
+    color: #ffd25a;
+}
+
+.thirdSection {
+    border-bottom: 2px solid black;
+    background: #F7DBA7;
+    padding-bottom: 30vh;
+}
+
+.thirdSection h1 {
+    font-size: 3vw;
+    text-align: left;
+    margin-top: 5rem;
+    color: #141301;
+}
+
+.thirdSection p {
+    width: 100%;
+    color: #141301;
+}
+
+.myRow {
+    display: flex;
+}
+
+.contacts {
+    text-align: right;
+    flex: 1;
+    margin-top: 0;
+    padding-top: 0;
+    width: 50%;
+}
+
+.contacts h1 {
+    text-align: right;
+}
+
+.contacts p {
+    font-size: 2vw;
+}
+
+.socials {
+    text-align: left;
+    flex: 1;
+    width: 50%;
+}
+
+.socials a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #141301;
+    font-size: 4vw;
+    width: 6vw;
+    height: 6vw;
+    margin-bottom: 10px;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.instagram:hover {
+    color: #c32aa3;
+}
+
+.contacts button {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    background: transparent;
+}
+
+.contacts button:hover {
+    color: white;
+    background: #52b788;
+}
+
+
+@media screen and (min-width: 701px) {
+    .thirdSection {
+        height: 10vh !important;
+    }
+
+    .titleInSlides {
+        font-size: 4vw;
+        margin-bottom: 5vh;
+    }
+
+    .subTitleInSlides {
+        font-size: 2vw;
+    }
+
+    .goButtonInSlides {
+        margin-top: 5vh;
+        width: 10em;
+        border: 1px solid black;
+        height: 2em;
+        font-size: 3vh;
+        background: #ffd25a;
+    }
+
+    .clickImageContainer {
+        width: 70%;
+        height: 9vw;
+        margin-top: -10vw;
+        position: absolute;
+        opacity: 0.7;
+        margin-left: 15%;
+    }
+
+    .clickImage {
+        cursor: pointer;
+        height: 9vw;
+        border: 1px solid #ffd25a;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .thirdSection h1 {
+        font-size: 3vh;
+    }
+
+    .titleInSlides {
+        margin-top: 1em;
+        font-size: 6vw;
+    }
+
+    .subTitleInSlides {
+        margin-top: 9em;
+        font-size: 4vw;
+    }
+
+    .goButtonInSlides {
+        background: #ffd25a;
+        border: 1px solid black;
+        width: 10em;
+        font-size: 4vw;
+        height: 2em;
+    }
+
+    .slideshow-container {
+        height: 110vw;
+    }
+
+    .clickImageContainer {
+        width: 100%;
+        position: absolute;
+        margin: 40% auto;
+        opacity: 0.7;
+    }
+
+    .clickImage {
+        height: 15vw;
+        cursor: pointer;
+        width: 100%;
+        border: 1px solid #ffd25a;
+    }
+
+    .facebook {
+        color: #3b5998 !important;
+    }
+
+    .twitter {
+        color: #1da1f2 !important;
+    }
+
+    .instagram {
+        color: #c32aa3 !important;
+    }
+    .thirdSection {
+        height: 30rem !important;
+    }
+
+    .myRow {
+        display: inline-block;
+    }
+
+    .socials {
+        width: 100%;
+    }
+
+    .socials a {
+        font-size: 4vh;
+    }
+
+    .contacts {
+        text-align: right;
+        margin-top: -2vh;
+        width: 100%;
+    }
+
+    .contacts p {
+        font-size: 2vh;
+    }
+}
+

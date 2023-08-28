@@ -28,3 +28,22 @@ function currentDiv(number) {
     }
     x[number].style.display = "block";
 }
+
+
+const copyContentNumberOne = async () => {
+let text = document.getElementById('contactNumberOne').innerHTML;
+    try {
+        await navigator.clipboard.writeText(text);
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+}
+
+const copyContentNumberTwo = async () => {
+    let text = document.getElementById('contactNumberTwo').innerHTML;
+    try {
+        await navigator.clipboard.writeText(text);
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+}
