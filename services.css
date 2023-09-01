@@ -1,0 +1,37 @@
+
+.secondSection:first-of-type {
+    background: #403D39;
+    padding-top: 5vh;
+}
+
+.wave2 .shape-fill {
+    fill: #403D39;
+}
+
+.secondSection:nth-of-type(2) {
+    background: #48A9A6;
+}
+
+.wave3 .shape-fill {
+    fill: #48A9A6;
+}
+
+.secondSection:nth-of-type(2) p {
+    color: #141301;
+}
+
+.secondSection:nth-of-type(2) h1 {
+    color: #141301;
+}
+
+.secondSection:last-of-type {
+    background: #141301;
+}
+
+.secondSection:last-of-type p {
+    color: #ffd25a;
+}
+
+.secondSection:last-of-type h1 {
+    color: #ffd25a;
+}

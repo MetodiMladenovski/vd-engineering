@@ -1,0 +1,14 @@
+.contactSection {
+    padding-top: 20vh;
+    color: #141301;
+    background: #F7DBA7;
+    height: 85vh;
+}
+
+.contactSection .socials h1 {
+    text-align: left;
+}
+
+.contactSection .socials {
+    margin-bottom: 10vh;
+}

@@ -409,6 +409,10 @@ footer {
     color: #c32aa3;
 }
 
+.whatsapp:hover {
+    color: #00ff00;
+}
+
 .contacts button {
     border: 1px solid black;
     border-radius: 4px;
@@ -459,6 +463,10 @@ footer {
         height: 9vw;
         border: 1px solid #ffd25a;
     }
+}
+
+.line {
+    background: #ffd25a;
 }
 
 @media screen and (max-width: 700px) {
@@ -513,6 +521,11 @@ footer {
     .instagram {
         color: #c32aa3 !important;
     }
+
+    .whatsapp {
+        color: #52b788 !important;
+    }
+
     .thirdSection {
         height: 30rem !important;
     }
@@ -540,3 +553,7 @@ footer {
     }
 }
 
+
+.contacts span {
+    color: #52b788;
+}

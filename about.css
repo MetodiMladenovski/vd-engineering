@@ -1,0 +1,67 @@
+.aboutSection {
+    padding-top: 10vh;
+    color: #141301;
+    background: #1E212B;
+    height: 100%;
+}
+
+.forTheCOMPANY {
+    padding-top: 5vh;
+    width: 100%;
+}
+
+.forTheCOMPANY h1 {
+    text-align: center;
+    color: #ffd25a;
+}
+
+.forTheCOMPANY p {
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+    color: #ffd25a;
+}
+
+.leftGuy {
+    text-align: center;
+    width: 50%;
+    float: left;
+    padding: 2rem;
+    color: #ffd25a;
+    display: inline-block;
+}
+
+.rightGuy {
+    text-align: center;
+    width: 50%;
+    float: right;
+    padding: 2rem;
+    display: inline-block;
+    color: #ffd25a;
+}
+
+.aboutSection img {
+    width: 70%;
+    height: 20rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ffd25a;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+    .leftGuy {
+        width: 100%;
+    }
+
+    .rightGuy {
+        width: 100%;
+    }
+
+    .forTheCOMPANY p {
+        width: 100%;
+    }
+
+    .aboutSection img {
+        width: 90%;
+    }
+}

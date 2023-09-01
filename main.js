@@ -17,11 +17,11 @@ function showDivs(n) {
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    x[slideIndex-1].style.display = "block";
+    x[slideIndex - 1].style.display = "block";
 }
 
 function currentDiv(number) {
-    slideIndex = number+1;
+    slideIndex = number + 1;
     let x = document.getElementsByClassName("mySlides");
     for (let i = 0; i < x.length; i++) {
         x[i].style.display = "none";
@@ -31,7 +31,7 @@ function currentDiv(number) {
 
 
 const copyContentNumberOne = async () => {
-let text = document.getElementById('contactNumberOne').innerHTML;
+    let text = document.getElementById('contactNumberOne').innerHTML;
     try {
         await navigator.clipboard.writeText(text);
     } catch (err) {
